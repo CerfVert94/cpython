@@ -39,7 +39,12 @@ Modification Examples
    >>> 1 ~= 1
    '~=' Tracing back to : ../Objects/longobject.c : 3577
    True
-   >>> 
+   >>> 1 ~= 1.09
+   '~=' Tracing back to : ../Objects/floatobject.c : 571
+   False
+   >>> 1 ~= 1.009
+   '~=' Tracing back to : ../Objects/floatobject.c : 571
+   True
 
 
 Official Documentation
