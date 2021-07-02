@@ -401,6 +401,7 @@ comparison[expr_ty]:
     | bitwise_or
 compare_op_bitwise_or_pair[CmpopExprPair*]:
     | eq_bitwise_or
+    | aleq_bitwise_or
     | noteq_bitwise_or
     | lte_bitwise_or
     | lt_bitwise_or
@@ -411,6 +412,7 @@ compare_op_bitwise_or_pair[CmpopExprPair*]:
     | isnot_bitwise_or
     | is_bitwise_or
 eq_bitwise_or[CmpopExprPair*]: '==' a=bitwise_or { _PyPegen_cmpop_expr_pair(p, Eq, a) }
+aleq_bitwise_or[CmpopExprPair*]: '~=' a=bitwise_or { _PyPegen_cmpop_expr_pair(p, Eq, a) }
 noteq_bitwise_or[CmpopExprPair*]:
     | (tok='!=' { _PyPegen_check_barry_as_flufl(p, tok) ? NULL : tok}) a=bitwise_or {_PyPegen_cmpop_expr_pair(p, NotEq, a) }
 lte_bitwise_or[CmpopExprPair*]: '<=' a=bitwise_or { _PyPegen_cmpop_expr_pair(p, LtE, a) }
