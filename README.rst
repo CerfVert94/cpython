@@ -17,14 +17,19 @@ Modification
 
 Build Example
 -------------
+::
+
    mkdir debug
    cd debug
    ./configure --with-pydebug
    make -j4 -s
    ./python
 
+
 Modification Examples
 ----------------------
+::
+
    Python 3.9.6+ (heads/v3.9_playground-dirty:3e9706e075, Jul  3 2021, 00:32:23) 
    [GCC 9.3.0] on linux
    Type "help", "copyright", "credits" or "license" for more information.
@@ -36,8 +41,10 @@ Modification Examples
    True
    >>> 
 
-This is Python version 3.9.6
-============================
+Official Documentation
+======================
+ This is Python version 3.9.6
+-----------------------------
 Copyright (c) 2001-2021 Python Software Foundation.  All rights reserved.
 
 See the end of this file for further copyright and license information.
