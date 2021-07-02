@@ -1329,10 +1329,11 @@ class GrammarTests(unittest.TestCase):
 
     def test_comparison(self):
         ### comparison: expr (comp_op expr)*
-        ### comp_op: '<'|'>'|'=='|'>='|'<='|'!='|'in'|'not' 'in'|'is'|'is' 'not'
+        ### comp_op: '<'|'>'|'=='|'>='|'<='|'!='|'~='|'in'|'not' 'in'|'is'|'is' 'not'
         if 1: pass
         x = (1 == 1)
         if 1 == 1: pass
+        if 1 ~= 1: pass
         if 1 != 1: pass
         if 1 < 1: pass
         if 1 > 1: pass

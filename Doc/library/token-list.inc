@@ -97,6 +97,10 @@
 
    Token value for ``"=="``.
 
+.. data:: ALMOSTEQUAL
+
+   Token value for ``"~="``.
+
 .. data:: NOTEQUAL
 
    Token value for ``"!="``.
