@@ -1,27 +1,43 @@
+This is a MODIFIED VERSION of Python v3.9.6
+===========================================
+Copyright (c) 2001-2021 Python Software Foundation.  All rights reserved.
+
+See the end of this file for further copyright and license information.
+(The official README content is copy-pasted below.)
+
+Introduction
+------------
+This is a personal project to investigate and understand the internals of Python, CPython.
+In order to achieve this, I will be playing around with it and add, delete and modify its features.
+
+
+Modification
+------------
+- Added a new (rich) comparison operator '~=', almost equal. 
+
+Build Example
+-------------
+   mkdir debug
+   cd debug
+   ./configure --with-pydebug
+   make -j4 -s
+   ./python
+
+Modification Examples
+----------------------
+   Python 3.9.6+ (heads/v3.9_playground-dirty:3e9706e075, Jul  3 2021, 00:32:23) 
+   [GCC 9.3.0] on linux
+   Type "help", "copyright", "credits" or "license" for more information.
+   >>> 1 ~= 1.001
+   '~=' Tracing back to : ../Objects/floatobject.c : 571
+   True
+   >>> 1 ~= 1
+   '~=' Tracing back to : ../Objects/longobject.c : 3577
+   True
+   >>> 
+
 This is Python version 3.9.6
 ============================
-
-.. image:: https://travis-ci.org/python/cpython.svg?branch=3.9
-   :alt: CPython build status on Travis CI
-   :target: https://travis-ci.org/python/cpython
-
-.. image:: https://github.com/python/cpython/workflows/Tests/badge.svg
-   :alt: CPython build status on GitHub Actions
-   :target: https://github.com/python/cpython/actions
-
-.. image:: https://dev.azure.com/python/cpython/_apis/build/status/Azure%20Pipelines%20CI?branchName=3.9
-   :alt: CPython build status on Azure DevOps
-   :target: https://dev.azure.com/python/cpython/_build/latest?definitionId=4&branchName=3.9
-
-.. image:: https://codecov.io/gh/python/cpython/branch/3.9/graph/badge.svg
-   :alt: CPython code coverage on Codecov
-   :target: https://codecov.io/gh/python/cpython
-
-.. image:: https://img.shields.io/badge/discourse-join_chat-brightgreen.svg
-   :alt: Python Discourse chat
-   :target: https://discuss.python.org/
-
-
 Copyright (c) 2001-2021 Python Software Foundation.  All rights reserved.
 
 See the end of this file for further copyright and license information.
@@ -171,7 +187,7 @@ Converting From Python 2.x to 3.x
 
 Significant backward incompatible changes were made for the release of Python
 3.0, which may cause programs written for Python 2 to fail when run with Python
-3.  For more information about porting your code from Python 2 to Python 3, see
+1.  For more information about porting your code from Python 2 to Python 3, see
 the `Porting HOWTO <https://docs.python.org/3/howto/pyporting.html>`_.
 
 
