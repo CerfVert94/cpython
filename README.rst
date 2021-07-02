@@ -41,10 +41,11 @@ Modification Examples
    True
    >>> 
 
+
 Official Documentation
 ======================
- This is Python version 3.9.6
------------------------------
+This is Python version 3.9.6
+----------------------------
 Copyright (c) 2001-2021 Python Software Foundation.  All rights reserved.
 
 See the end of this file for further copyright and license information.
