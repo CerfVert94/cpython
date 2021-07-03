@@ -25,7 +25,7 @@ Build Example
    make -j4 -s
    ./python
 
-Examples of Modifications
+Examples of the Modifications
 ----------------------
 ::
 
