@@ -17,6 +17,7 @@ Modification
 
 Build Example
 -------------
+::
    mkdir debug
    cd debug
    ./configure --with-pydebug
@@ -25,6 +26,7 @@ Build Example
 
 Modification Examples
 ----------------------
+::
    Python 3.9.6+ (heads/v3.9_playground-dirty:3e9706e075, Jul  3 2021, 00:32:23) 
    [GCC 9.3.0] on linux
    Type "help", "copyright", "credits" or "license" for more information.
@@ -34,7 +36,12 @@ Modification Examples
    >>> 1 ~= 1
    '~=' Tracing back to : ../Objects/longobject.c : 3577
    True
-   >>> 
+   >>> 1.0 ~= 1.01
+   '~=' Tracing back to : ../Objects/floatobject.c : 571
+   False
+   >>> 1.0 ~= 1.009
+   '~=' Tracing back to : ../Objects/floatobject.c : 571
+   True
 
 This is Python version 3.9.6
 ============================
