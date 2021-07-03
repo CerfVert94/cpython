@@ -45,8 +45,10 @@ Modification Examples
    '~=' Tracing back to : ../Objects/floatobject.c : 571
    True
 
-This is Python version 3.9.6
+Official Documentation
 ============================
+This is Python version 3.9.6
+----------------------------
 Copyright (c) 2001-2021 Python Software Foundation.  All rights reserved.
 
 See the end of this file for further copyright and license information.
