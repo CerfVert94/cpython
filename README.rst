@@ -45,7 +45,7 @@ Examples of the Modifications
    '~=' Tracing back to : ../Objects/floatobject.c : 571
    True
 
-Official Documentation
+Official README
 ============================
 This is Python version 3.9.6
 ----------------------------
