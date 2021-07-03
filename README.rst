@@ -18,6 +18,7 @@ Modification
 Build Example
 -------------
 ::
+
    mkdir debug
    cd debug
    ./configure --with-pydebug
@@ -27,6 +28,7 @@ Build Example
 Modification Examples
 ----------------------
 ::
+
    Python 3.9.6+ (heads/v3.9_playground-dirty:3e9706e075, Jul  3 2021, 00:32:23) 
    [GCC 9.3.0] on linux
    Type "help", "copyright", "credits" or "license" for more information.
